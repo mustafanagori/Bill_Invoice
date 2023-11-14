@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:table/gen.dart';
 
 class TableScreen extends StatelessWidget {
   const TableScreen({super.key, required this.title});
@@ -10,7 +12,9 @@ class TableScreen extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           leading: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.to(const MyInvoice());
+              },
               icon: const Icon(
                 Icons.blinds_closed,
                 color: Colors.white,

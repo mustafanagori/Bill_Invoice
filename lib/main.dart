@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:table/table.dart';
 
 void main() {
@@ -11,11 +12,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         appBarTheme: AppBarTheme(
+            iconTheme: IconThemeData(color: Colors.white),
             centerTitle: true,
             backgroundColor: Colors.deepPurple,
             elevation: 2,
